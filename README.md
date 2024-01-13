@@ -1,5 +1,5 @@
 # CD12352 - Infrastructure as Code Project Solution
-# [YOUR NAME HERE]
+# http://udagra-webap-paor2wgawtlk-2000645313.us-east-1.elb.amazonaws.com/
 
 ## Spin up instructions
 TODO

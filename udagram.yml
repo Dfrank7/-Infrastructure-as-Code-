@@ -44,12 +44,13 @@ Resources:
     Properties: 
       LaunchTemplateData:
         UserData:
-          Fn::Base64: |
+          Fn::Base64: !Sub |
             #!/bin/bash
             apt-get update -y
             apt-get install apache2 -y
             systemctl start apache2.service
-            echo "it works! Udagram, Udacity" > /var/www/html/index.html
+            cd /var/www/html
+            echo "Udacity Demo Web Server Up and Running!" > index.html
         ImageId: ami-0557a15b87f6559cf
         SecurityGroupIds:
           - !Ref WebServerSecGroup
